@@ -1,0 +1,77 @@
+Jottings-Notes Website
+
+Create Organise and Share
+
+User Sign in
+->JWT
+->OAuth
+
+
+search in all notebooks, search in particular notebook
+filter by tag
+Notebook-> create a page
+give permission to edit a page to another user(Team Sharing features)
+Combined Work space for all 
+Create your project's documentation, Share among your developers
+
+Pages:
+login, register-> oauth
+profile
+home
+create note
+print option
+notification page
+all notebooks
+all notes -> datewise
+settings
+
+when there are no notes keep a notes figure (don't keep it blank)
+My notes, Shared Notes columns separatly
+
+
+1)login/register/forgot-password(security qs)    (redux or context hook)
+
+2)create-note/notebook
+
+3)CRUD PROFILE / notes
+
+
+
+NOTES SCHEMA---------(ID,TAG,TEXTAREA,TITLE,allowed users)
+Notebook schema-(ID,allowed users-obj,Title-string,array of notes id-array,)
+
+
+
+
+(.....................WEBSOCKET...........................)
+
+
+Profile ->username,name,password,email,belongings(notes,nb)
+
+
+
+notebook->array of note ids,checking of user access(json in json)---> o(1), Instead of keeping array of users where time complexity is o(n)
+
+
+(N*) request access denial 
+     ctrl+S
+     PDF downloading
+     Forget password company mail sending otp
+     INDEX page
+
+
+note:
+createnote
+getnote
+update
+deletenote
+addaccess-read/write
+deleteaccess-read/write
+
+notebook:
+createnotebook
+getnotebook
+update
+delete
+addaccess notebook
+deleteaccessnotebook
